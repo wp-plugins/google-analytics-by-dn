@@ -22,7 +22,7 @@ The easiest way to add Google Analytics to your website. You only need to know y
 
 = How do I report a bug? =
 
-Leave a comment and I will get back as soon as possible.
+Leave a message in support and I will get back as soon as possible.
 
 = Will there be future development? =
 
