@@ -13,7 +13,10 @@ Add Google Analytics to your website quickly and easily! Simply key in your Goog
 
 The easiest way to add Google Analytics to your website. You only need to know your tracking ID and this plugin will do the rest for you. Install and activate to start tracking!
 
-Now you can anonymize the IP address of the hit (http request) sent to Google Analytics.
+This plugin uses the async attribute. This adds support for preloading which will provide a small performance boost on modern browsers. However, do note that it can degrade to synchronous loading and execution on IE 9 and older mobile browsers which do not recognize the async attribute.
+
+Additional Features:
+1. Anonymize IP address of visitors
 
 == Installation ==
 
