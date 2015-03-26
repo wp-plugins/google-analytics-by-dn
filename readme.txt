@@ -13,10 +13,10 @@ Add Google Analytics to your website easily and quickly!
 
 The easiest way to add Google Analytics to your website. Simply key in your Google Analytics Tracking ID and this plugin will do the rest for you. Install and activate to start tracking!
 
-This plugin uses the async attribute. This adds support for preloading which will provide a small performance boost on modern browsers. However, do note that it can degrade to synchronous loading and execution on IE 9 and older mobile browsers which do not recognize the async attribute.
+This plugin uses the asynchronous Google Analytics tracking code. This adds support for preloading which will provide a small performance boost on modern browsers. However, do note that it can degrade to synchronous loading and execution on IE 9 and older mobile browsers which do not recognize the async attribute.
 
-= Additional Features: =
-1. Anonymize IP address of visitors
+= List of features: =
+1. Option to anonymize IP address for privacy.
 
 == Installation ==
 
