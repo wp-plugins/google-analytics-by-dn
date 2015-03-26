@@ -15,7 +15,7 @@ The easiest way to add Google Analytics to your website. You only need to know y
 
 This plugin uses the async attribute. This adds support for preloading which will provide a small performance boost on modern browsers. However, do note that it can degrade to synchronous loading and execution on IE 9 and older mobile browsers which do not recognize the async attribute.
 
-Additional Features:
+= Additional Features: =
 1. Anonymize IP address of visitors
 
 == Installation ==
