@@ -7,11 +7,11 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Google Analytics to your website quickly and easily! Simply key in your Google Analytics Tracking ID and start tracking!
+Add Google Analytics to your website quickly and easily!
 
 == Description ==
 
-The easiest way to add Google Analytics to your website. You only need to know your tracking ID and this plugin will do the rest for you. Install and activate to start tracking!
+The easiest way to add Google Analytics to your website. Simply key in your Google Analytics Tracking ID and this plugin will do the rest for you. Install and activate to start tracking!
 
 This plugin uses the async attribute. This adds support for preloading which will provide a small performance boost on modern browsers. However, do note that it can degrade to synchronous loading and execution on IE 9 and older mobile browsers which do not recognize the async attribute.
 
