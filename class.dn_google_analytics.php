@@ -15,24 +15,19 @@ class DN_Google_Analytics {
 			return;
 		}
 
-		if ($options['anonymize_ip'] == 1) {
-			$anonymize_ip = $options['anonymize_ip'];
-		} 
+		?>
 
-		// 
+<!-- Google Analytics -->
+<script async src='//www.google-analytics.com/analytics.js'></script>
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', '<?php echo $tracking_id ?>', 'auto');
+<?php if ( isset( $options['anonymize_ip'] ) ) echo "ga('set', 'anonymizeIp', true);\n" ?>
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
-		printf("
-		<!-- Google Analytics -->
-		<script async src='//www.google-analytics.com/analytics.js'></script>
-		<script>
-		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-		ga('create', '%s', 'auto');
-		%s
-		ga('send', 'pageview');
-		</script>
-		<!-- End Google Analytics -->
-		", $tracking_id,
-		isset( $options['anonymize_ip'] ) ? "ga('set', 'anonymizeIp', true);" : "");
+		<?php
 
 	}
 
