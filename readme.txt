@@ -11,12 +11,13 @@ Add Google Analytics to your website easily and quickly!
 
 == Description ==
 
-The easiest way to add Google Analytics to your website. Simply key in your Google Analytics Tracking ID.
+Google Analytics by DN allows you to track your website easily.
 
 This plugin uses the Universal Google Analytics tracking code (analytics.js). This adds support for preloading which will provide a small performance boost on modern browsers. However, do note that it can degrade to synchronous loading and execution on IE 9 and older mobile browsers which do not recognize the async attribute.
 
 = List of features: =
-1. Option to anonymize IP address for privacy.
+1. User-friendly interface (start tracking by entering your tracking ID)
+2. Option to anonymize IP address for privacy.
 
 == Installation ==
 
