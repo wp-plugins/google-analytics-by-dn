@@ -4,7 +4,7 @@
  * Plugin Name: Google Analytics by DN
  * Plugin URI:  https://wordpress.org/plugins/google-analytics-by-dn/
  * Description: Add Google Analytics to your website easily and quickly
- * Version:     1.1.1
+ * Version:     1.1.2
  * Author:      Daryl Ng (DN)
  * License:     GPL2 or later
   

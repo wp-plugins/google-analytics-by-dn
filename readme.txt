@@ -3,7 +3,7 @@ Contributors: darylnwk
 Tags: google, analytics, statistics, data
 Requires at least: 3.6
 Tested up to: 4.1.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,11 +34,18 @@ Leave a comment and I will get back as soon as possible.
 
 Yes! I am already working on it.
 
+= Can I request for features? =
+
+Of course! Leave a message in the support forum.
+
 == Screenshots ==
 
 1. Settings page of plugin.
 
 == Changelog ==
+
+= 1.1.2 =
+* Minor improvement
 
 = 1.1.1 =
 * Minor bug fixed
@@ -51,6 +58,9 @@ Yes! I am already working on it.
 * This is the first build.
 
 == Upgrade Notice ==
+
+= 1.1.2 =
+Minor improvement
 
 = 1.1.1 =
 Minor bug fixed

@@ -39,34 +39,35 @@ class DN_Google_Analytics_Admin {
     public function page_init() {
         register_setting( 'dn_google_analytics_settings_option_group',   // Option group
                           'dn_google_analytics_settings_option',         // Option name
-                          array( $this, 'sanitize')                      // Sanitize
+                          array( $this, 'sanitize' )                     // Sanitize
         );
 
-        add_settings_section( 'page_section',                            // Section ID
-                              'Settings',                                // Title
-                              array( $this, 'print_plugin_info' ),       // Callback
+        // General Settings Section
+        add_settings_section( 'general_settings_section',                // Section ID
+                              'General Settings',                        // Title
+                              array( $this, 'general_settings_info' ),   // Callback
                               'settings_section'                         // Page
         );
 
-        // Tracking ID
+        // Tracking ID field
         add_settings_field( 'tracking_id',                               // ID
                             'Tracking ID',                               // Title
                             array( $this, 'tracking_id_callback' ),      // Callback
                             'settings_section',                          // Page
-                            'page_section'                               // Section ID
+                            'general_settings_section'                   // Section ID
         );
 
-        // Anonymize IP
+        // Anonymize IP field
         add_settings_field( 'anonymize_ip',                              // ID
-                            'Anonymize IP',                              // Title
+                            'Anonymize IP Address',                      // Title
                             array( $this, 'anonymize_ip_callback' ),     // Callback
                             'settings_section',                          // Page
-                            'page_section'                               // Section ID
+                            'general_settings_section'                   // Section ID
         );
     }
 
-    public function print_plugin_info() {
-        $html = 'Note: Google Analytics will not appear when Tracking ID is empty';
+    public function general_settings_info() {
+        $html = 'Note: Google Analytics will not be activated if Tracking ID is empty';
         echo $html;
     }
 
@@ -80,10 +81,9 @@ class DN_Google_Analytics_Admin {
 
     public function anonymize_ip_callback() {
         $this->options = get_option( 'dn_google_analytics_settings_option' );
-        // $html = '<p>Anonymize your users\' ip to protect their privacy</p>';
         $html = '<input type="checkbox" id="anonymize_ip" name="dn_google_analytics_settings_option[anonymize_ip]" value="1" ' . checked( 1, $this->options['anonymize_ip'], false ) . '/>';
-        $html .= '<label for="anonymize_ip">check to activate</label>';
-        
+        $html .= '<label for="anonymize_ip"> Check to enable</label>';
+        $html .= '<p class="description">Protect visitors\' privacy by anonymizing their IP address in Google Analytics.</p>';
         echo $html;
     }
 

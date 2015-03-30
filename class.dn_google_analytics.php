@@ -9,9 +9,7 @@ class DN_Google_Analytics {
 	public function add_google_analytics() {
 		$options = get_option( 'dn_google_analytics_settings_option' );
 
-		if ($options['tracking_id'] != null) {
-			$tracking_id = $options['tracking_id'];
-		} else {
+		if ( ( $tracking_id = $options['tracking_id'] ) == null) {
 			return;
 		}
 
@@ -28,7 +26,6 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 		<?php
-
 	}
 
 }
