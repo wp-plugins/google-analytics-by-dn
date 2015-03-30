@@ -66,7 +66,7 @@ class DN_Google_Analytics_Admin {
     }
 
     public function print_plugin_info() {
-        $html = 'Note: Google Analytics will not appear when Tracking ID is empty';
+        $html = 'Note: Google Analytics will not be activated if Tracking ID is empty';
         echo $html;
     }
 
@@ -82,7 +82,7 @@ class DN_Google_Analytics_Admin {
         $this->options = get_option( 'dn_google_analytics_settings_option' );
         // $html = '<p>Anonymize your users\' ip to protect their privacy</p>';
         $html = '<input type="checkbox" id="anonymize_ip" name="dn_google_analytics_settings_option[anonymize_ip]" value="1" ' . checked( 1, $this->options['anonymize_ip'], false ) . '/>';
-        $html .= '<label for="anonymize_ip">check to activate</label>';
+        $html .= '<label for="anonymize_ip"> check to increase privacy</label>';
         
         echo $html;
     }
