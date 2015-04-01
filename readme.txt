@@ -18,8 +18,8 @@ This plugin uses the Universal Google Analytics tracking code (analytics.js).
 = List of features: =
 1. User-friendly interface (start tracking by entering your tracking ID)
 2. Option to anonymize IP address for privacy.
-3. Track 404 errors.
-4. Forced SSL.
+3. Tracking of 404 pages.
+4. Force SSL.
 
 == Installation ==
 
