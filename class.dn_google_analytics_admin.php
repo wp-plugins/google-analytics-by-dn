@@ -59,7 +59,7 @@ class DN_Google_Analytics_Admin {
 
         // Anonymize IP field
         add_settings_field( 'anonymize_ip',                              // ID
-                            'Anonymize IP Address',                      // Title
+                            'Anonymize IP',                              // Title
                             array( $this, 'anonymize_ip_callback' ),     // Callback
                             'settings_section',                          // Page
                             'general_settings_section'                   // Section ID
@@ -67,7 +67,7 @@ class DN_Google_Analytics_Admin {
     }
 
     public function general_settings_info() {
-        $html = 'Note: Google Analytics will not be activated if Tracking ID is empty';
+        $html = 'Note: Google Analytics will not be activated if Tracking ID is empty.';
         echo $html;
     }
 

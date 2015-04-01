@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: darylnwk
-Tags: google, analytics, statistics, data
+Tags: google, analytics, statistics, data, simple
 Requires at least: 3.6
 Tested up to: 4.1.1
-Stable tag: 1.1.2
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,11 +13,13 @@ Add Google Analytics to your website easily and quickly!
 
 Google Analytics by DN allows you to track your website easily.
 
-This plugin uses the Universal Google Analytics tracking code (analytics.js). This adds support for preloading which will provide a small performance boost on modern browsers. However, do note that it can degrade to synchronous loading and execution on IE 9 and older mobile browsers which do not recognize the async attribute.
+This plugin uses the Universal Google Analytics tracking code (analytics.js). 
 
 = List of features: =
 1. User-friendly interface (start tracking by entering your tracking ID)
 2. Option to anonymize IP address for privacy.
+3. Track 404 errors.
+4. Forced SSL.
 
 == Installation ==
 
@@ -44,6 +46,9 @@ Of course! Leave a message in the support forum.
 
 == Changelog ==
 
+= 1.2 =
+* Added 404 error tracking
+
 = 1.1.2 =
 * Minor improvement
 
@@ -58,6 +63,10 @@ Of course! Leave a message in the support forum.
 * This is the first build.
 
 == Upgrade Notice ==
+
+= 1.2 =
+Added 404 error tracking
+Added force SSL
 
 = 1.1.2 =
 Minor improvement
